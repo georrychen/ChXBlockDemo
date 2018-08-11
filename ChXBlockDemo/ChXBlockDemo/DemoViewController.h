@@ -22,12 +22,16 @@ typedef void(^OneBlock)(NSString *backString);
 
 @interface DemoViewController : UIViewController
 @property (nonatomic, weak) id <DemoViewDelegate> viewDelegate;
+
 @property (nonatomic, copy) OneBlock oneBlock;
 
 /**
  3. 第二种创建 Block 的方式
+ 
+ 注意： block 的类型为： void(^)(NSString*)
+ 其中： void - 表示返回值类型；(^) - 表示属性名； (NSString*) - 表示参数列表
  */
-@property (nonatomic, strong) void(^TwoBlock)(NSString *backString);
+@property (nonatomic, strong) void(^twoBlock)(NSString *backString);
 
 /**
  4. block 作为参数，用于反向传值

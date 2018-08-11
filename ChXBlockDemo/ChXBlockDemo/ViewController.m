@@ -27,7 +27,7 @@
         self.testLabel.text = backString;
     };
     
-    demoVc.TwoBlock = ^(NSString *backString) {
+    demoVc.twoBlock = ^(NSString *backString) {
         self.testLabel.text = backString;
     };
     

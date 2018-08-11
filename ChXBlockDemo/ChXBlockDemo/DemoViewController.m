@@ -28,7 +28,7 @@
 }
 - (IBAction)blockTwoClicked:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
-    if (self.TwoBlock) {
+    if (self.twoBlock) {
         self.TwoBlock(@"第二种创建Block传的值！");
     }
 }
