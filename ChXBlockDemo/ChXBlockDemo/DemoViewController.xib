@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DemoViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqC-RK-y8f">
+                    <rect key="frame" x="156.5" y="218.5" width="62" height="30"/>
+                    <state key="normal" title="代理传值"/>
+                    <connections>
+                        <action selector="delegateClicked:" destination="-1" eventType="touchUpInside" id="TJf-O3-PWO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ww-g6-EeL">
+                    <rect key="frame" x="130" y="278.5" width="114" height="30"/>
+                    <state key="normal" title="block形式一传值"/>
+                    <connections>
+                        <action selector="blockOneClicked:" destination="-1" eventType="touchUpInside" id="nHQ-X2-9f5"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTJ-gy-Mao">
+                    <rect key="frame" x="130" y="339" width="114" height="30"/>
+                    <state key="normal" title="block形式二传值"/>
+                    <connections>
+                        <action selector="blockTwoClicked:" destination="-1" eventType="touchUpInside" id="gyY-RC-YfS"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8H-ml-9lh">
+                    <rect key="frame" x="100" y="399" width="175" height="30"/>
+                    <state key="normal" title="block做为方法的一个参数"/>
+                    <connections>
+                        <action selector="blockThreeClicked:" destination="-1" eventType="touchUpInside" id="XJA-gF-kdN"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.94875994492556615" green="1" blue="0.98286611752712116" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="5Ww-g6-EeL" firstAttribute="top" secondItem="nqC-RK-y8f" secondAttribute="bottom" constant="30" id="5Rm-sg-wO8"/>
+                <constraint firstItem="vTJ-gy-Mao" firstAttribute="top" secondItem="5Ww-g6-EeL" secondAttribute="bottom" constant="30" id="B0N-UQ-nvq"/>
+                <constraint firstItem="nqC-RK-y8f" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-100" id="Cfu-vB-nWm"/>
+                <constraint firstItem="k8H-ml-9lh" firstAttribute="top" secondItem="vTJ-gy-Mao" secondAttribute="bottom" constant="30" id="Ddb-MY-5bS"/>
+                <constraint firstItem="k8H-ml-9lh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Ruh-I1-BCX"/>
+                <constraint firstItem="vTJ-gy-Mao" firstAttribute="centerX" secondItem="5Ww-g6-EeL" secondAttribute="centerX" id="cbN-Lt-xWc"/>
+                <constraint firstItem="nqC-RK-y8f" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ie9-wE-YBp"/>
+                <constraint firstItem="5Ww-g6-EeL" firstAttribute="centerX" secondItem="nqC-RK-y8f" secondAttribute="centerX" id="yOS-35-E6g"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+</document>
